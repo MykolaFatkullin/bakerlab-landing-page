@@ -26,7 +26,7 @@
 }
 
 @mixin set-font($fontProperties) {
-  $sizeMap: map.get($fontProperties, size);
+  $size-map: map.get($fontProperties, size);
 
   font-family: map.get($fontProperties, font);
   font-size: font-size($sizeMap, mobile);
@@ -37,15 +37,15 @@
   letter-spacing: map.get($fontProperties, spacing);
 
   @include on-tablet {
-    font-size: font-size($sizeMap, tablet, mobile);
+    font-size: font-size($size-map, tablet, mobile);
   }
 
   @include on-desktop {
-    font-size: font-size($sizeMap, desktop, tablet, mobile);
+    font-size: font-size($size-map, desktop, tablet, mobile);
   }
 
   @include on-big-desktop {
-    font-size: font-size($sizeMap, big-desktop, desktop, tablet, mobile);
+    font-size: font-size($size-map, big-desktop, desktop, tablet, mobile);
   }
 }
 
