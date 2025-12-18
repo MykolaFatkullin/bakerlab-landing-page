@@ -1,3 +1,18 @@
-body {
-  margin: 0;
-}
+@import 'utils/fonts';
+@import 'utils/vars';
+@import 'utils/mixins';
+@import 'utils/typography';
+@import 'page';
+@import 'svg';
+@import 'icon';
+@import 'container';
+@import 'top-bar';
+@import 'header';
+@import 'menu';
+@import 'nav';
+@import 'button';
+@import 'products';
+@import 'product-card';
+@import 'about';
+@import 'footer';
+@import 'contacts';
